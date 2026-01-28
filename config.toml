@@ -1,0 +1,16 @@
+[global]
+model_path = "models/yolov8s.onnx"
+teams_webhook = "#"
+
+[[cameras]]
+name = "Camera 1"
+url = "rtsp://admin:YetEfm5L@10.10.22.24:554/11"
+interval_secs = 30
+threshold = 0.45
+
+[[cameras]]
+name = "Camera 2"
+url = "rtsp://admin:YetEfm5L@10.10.22.23:554/11"
+interval_secs = 60
+threshold = 0.35
+
